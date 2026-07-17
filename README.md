@@ -1,5 +1,4 @@
 # UK CPIH Inflation Forecasting
-
 Forecasting UK CPIH annual inflation using ARIMA, benchmarked against a naive 
 forecast, with both a static long-horizon test and a rolling one-month-ahead 
 evaluation.
@@ -11,8 +10,15 @@ evaluation.
   (0.475 vs 0.506), though naive was marginally better on MAE — suggesting 
   ARIMA is better at avoiding large misses, at a small cost in typical months.
 
-See [`docs/methodology.md`](docs/methodology.md) for full details, including 
-model selection, stationarity testing, and evaluation methodology.
+## Charts
+
+**52-month-ahead forecast (ARIMA does not beat naive):**
+![52-month forecast comparison](results/figures/arima_vs_naive_52month.png)
+
+**Rolling 1-month-ahead forecast (ARIMA achieves lower RMSE):**
+![Rolling forecast comparison](results/figures/rolling_forecast_comparison.png)
+
+See [`docs/methodology.md`](docs/methodology.md) for full details, including
 
 ## Data
 UK CPIH Annual Rate (ONS series L55O), January 2005–present. Earlier data 
