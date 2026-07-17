@@ -18,8 +18,7 @@ evaluation.
 **Rolling 1-month-ahead forecast (ARIMA achieves lower RMSE):**
 ![Rolling forecast comparison](results/figures/rolling_forecast_comparison.png)
 
-See [`docs/methodology.md`](docs/methodology.md) for full details, including 
-model selection, stationarity testing, and evaluation methodology.
+Full methodology and evaluation details are in [`docs/methodology.md`](docs/methodology.md).
 
 ## Data
 UK CPIH Annual Rate (ONS series L55O), January 2005–present. Earlier data 
